@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Perfil oficial de dayanadiazu - Conecta conmigo en todas mis redes sociales">
+<title>milaroing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="td.css">
+   <link rel="icon" href="angel-de-la-muerte.png" type="image/x-icon" />
+
+</head>
+
+<body>
+
+<div class="header">
+   <div class="header-card">
+    <img id="fondo-cambiante" src="video14 - frame at 0m2s.jpg" alt="Fondo rotativo" 
+  >
+  
+     <style>
+    .header {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh; /* ocupa 80% de la pantalla  funciona perfecto me gusta */
+
+}
+
+.header-img {
+ width: 120%;
+  height: 120%;
+  object-fit: cover;
+
+  transform: scale(1.3); /* agranda la imagen */
+}
+
+ .header-card {
+  position: relative;
+}
+
+
+#fondo-cambiante {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 1;
+  transform: scale(1.3);
+  transition:
+    opacity 1.2s ease-in-out,
+    transform 4s ease;
+}
+
+#fondo-cambiante.fade-out {
+  opacity: 0;
+  transform: scale(1);
+}
+
+/* CARD */
+.header-bg {
+  position: absolute;
+  inset: -40px; /* agranda para evitar bordes */
+  background-image: url("1.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(40px) brightness(0.45);
+  transform: scale(1.2);
+
+  z-index: 1;
+}
+.header-bg {
+  will-change: transform, filter;
+}
+
+
+
+.link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:15px;
+  border-radius:999px;
+  background:var(--pink);
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+  transition:.2s;
+}
+
+.link:hover{
+  background:var(--pink-light);
+  transform:scale(1.02);
+}
+
+.icon{
+  font-size:18px;
+}
+
+
+     </style>
+
+<script>
+
+  const imagenes = ["video13 - frame at 0m3s.jpg", "video6 - frame at 0m5s.jpg", "video11 - frame at 0m4s.jpg ", "video7 - frame at 0m2s.jpg"];
+  let indice = 0;
+  const imgElement = document.getElementById("fondo-cambiante");
+  
+  setInterval(() => {
+    // Desvanecer
+    imgElement.style.opacity = 0;
+    
+    setTimeout(() => {
+      // Cambiar imagen
+      indice = (indice + 1) % imagenes.length;
+      imgElement.src = imagenes[indice];
+      // Reaparecer
+      imgElement.style.opacity = 1;
+    }, 500); // Esperar medio segundo para el fade out
+  }, 3000);
+
+ 
+
+
+</script>
+   </div>
+ 
+
+
+  <div class="marquee">
+
+    <div class="marquee__inner">
+      <span> instragram</span>
+    
+      <span>twiter(x)</span>
+      <span> facebook💙</span>
+      <span>FOLLOW ME ON ALL PLATFORMS</span>
+      <!-- Repite los mismos spans para que el loop sea infinito -->
+      <span> instragram</span>
+    
+      <span>twiter(x)</span>
+      <span> facebook💙</span>
+      <span>FOLLOW ME ON ALL PLATFORMS</span>
+
+    </div>
+  </div>
+  <div class="profile">
+   
+
+    <div class="username">mila roing</div>
+    <div class="handle">@milaroing</div>
+
+  <div class="icons">
+  <a href="https://www.instagram.com/mila_ry25/followers/" target="_blank" class="icon instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+<a href="https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61586776394782&sk=about&locale=es_LA" target="_blank" class="icon facebook">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+
+  <a href="https://x.com/mili_ry25" target="_blank" class="icon twitter">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+</div>
+
+
+    <div class="bio">
+      Conoce más de mi viendo todos mis links 💖
+      <div class="email">PR/AD: <span id="email-text">dayanadiazu@gmail.com</span></div>
+      <button class="copy-email" id="copy-email">(Copiar email)</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- GRID LINKS -->
+<div class="section">
+  <div class="section-title">
+    <i class="fas fa-th-large"></i> mi contenido 
+  </div>
+    <!-- Enlaces -->
+         <div class="links">
+    <a class="link" href="https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61586776394782&sk=about&locale=es_LA">
+      <span class="icon">💙</span>facebook
+    </a>
+
+    <a class="link" href="https://x.com/mili_ry25">
+      <span class="icon">𝕏</span> Twitter
+    </a>
+
+    <a class="link" href="https://www.instagram.com/mila_ry25/followers/">
+      <span class="icon">📸</span> Instagram
+    </a>
+  </div> 
+  
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <div class="section-title">
+    <i class="fas fa-image"></i> Galería
+  </div>
+  
+   <div class="carousel">
+        <div class="group">
+        
+            <div class="card"><img src="video12 - frame at 0m1s.jpg" alt="Imagen 1"></div>
+            <div class="card"><img src="video3 - frame at 0m5s.jpg" alt="Imagen 2"></div>
+            <div class="card"><img src="video2 - frame at 0m5s.jpg" alt="Imagen 3"></div>
+            <div class="card"><img src="video7 - frame at 0m2s.jpg" alt="Imagen 4"></div>
+            <div class="card"><img src="video10 - frame at 0m1s.jpg" alt="Imagen 5"></div>
+            <div class="card"><img src="video12 - frame at 0m1s.jpg" alt="Imagen 6"></div>
+
+        </div>
+          <div aria-hidden class="group">
+            
+           <div class="card"><img src="video1 - frame at 0m4s.jpg" alt="Imagen 1"></div>
+            <div class="card"><img src="video3 - frame at 0m5s.jpg" alt="Imagen 2"></div>
+            <div class="card"><img src="video2 - frame at 0m5s.jpg" alt="Imagen 3"></div>
+            <div class="card"><img src="video7 - frame at 0m2s.jpg" alt="Imagen 4"></div>
+            <div class="card"><img src="video10 - frame at 0m1s.jpg" alt="Imagen 5"></div>
+            <div class="card"><img src="video12 - frame at 0m1s.jpg" alt="Imagen 6"></div>
+
+        </div>
+
+  <div id="modal">
+  <span id="close">&times;</span>
+
+  <button class="nav prev">&#10094;</button>
+  <img id="modal-img">
+  <button class="nav next">&#10095;</button>
+</div>
+ 
+</div>
+
+<section class="video-section">
+  <h2>Mi Video Final</h2>
+  <p>Disfruta de este video relacionado con el contenido de la página.</p>
+
+  <div class="video-vertical">
+    <video controls playsinline>
+      <source src="video12.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</section>
+
+</section>
+<style>
+ .video-section {
+  text-align: center;
+  padding: 10px;
+
+  margin-top: 10px;
+}
+
+/* Contenedor con proporción 9:16 */
+.video-vertical {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* tamaño tipo celular */
+  margin: 0 auto;
+  padding-top: 177.78%; /* 16 / 9 * 100 */
+}
+
+/* Video adaptativo */
+.video-vertical video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  border-radius: 12px; /* opcional */
+}
+
+</style>
+
+<!-- FOOTER -->
+<div class="footer">
+  <!-- From Uiverse.io by shadowfax29 --> 
+<div class="loading">
+ <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
+  <defs>
+    <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+      <stop stop-color="pink" offset="0%"></stop>
+      
+         <stop stop-color="blue" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+
+  <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
+</svg>
+
+</div>
+<style>
+  /* From Uiverse.io by shadowfax29 */ 
+.svgbox {
+  --blue: rgb(148, 66, 63);
+  stroke: var(--blue);
+  stroke-width: 5;
+  fill: none;
+  stroke-dasharray: 50, 14;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 1;
+  }
+
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+
+
+</style>
+ 
+  <p style="margin-top: 10px; font-size: 12px; color: #888;">© 2026 milaroing. Todos los derechos reservados.</p>
+</div>
+
+<script>
+
+
+const headerImg = document.querySelector('.header-bg');
+
+window.addEventListener('scroll', () => {
+  const scroll = window.scrollY;
+
+  // 🔥 Ajustes de intensidad
+  const blur = Math.min(12, scroll / 80);      // Más blur
+  const scale = 1.3 + scroll / 1200;           // Zoom más agresivo
+  const translateY = scroll * 0.2;             // Parallax real
+
+  headerImg.style.filter = `blur(${blur}px) brightness(0.6)`;
+  headerImg.style.transform = `
+    scale(${scale})
+    translateY(${translateY}px)
+  `;
+});
+
+
+
+// Animaciones al hacer scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.animationPlayState = 'running';
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+document.querySelectorAll('.card, .gallery-item').forEach(el => {
+  el.style.animationPlayState = 'paused';
+  observer.observe(el);
+});
+
+// Copiar email al portapapeles
+const copyEmailBtn = document.getElementById('copy-email');
+const emailText = document.getElementById('email-text').textContent;
+const toast = document.getElementById('toast');
+
+copyEmailBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(emailText).then(() => {
+    showToast('Email copiado al portapapeles');
+  }).catch(err => {
+    console.error('Error al copiar: ', err);
+    showToast('Error al copiar el email');
+  });
+});
+
+// Función para mostrar notificaciones toast
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add('show');
+  
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000);
+}
+
+// Efectos de hover en tarjetas
+
+
+// Navegación suave para enlaces internos (si los hubiera)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    if(targetId === '#') return;
+    
+    const targetElement = document.querySelector(targetId);
+    if(targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 20,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Prevenir clics en imágenes placeholder (solo para demo)
+document.querySelectorAll('img[src*="placeholder"]').forEach(img => {
+  img.addEventListener('click', function(e) {
+    e.preventDefault();
+    showToast('Esta es una imagen de ejemplo para la demostración');
+  });
+});
+
+
+
+
+
+//secion del modal 
+   
+
+  const images = document.querySelectorAll('.card img');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const close = document.getElementById('close');
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+
+  let currentIndex = 0;
+  const imageList = Array.from(images).map(img => img.src);
+
+  function showImage(index) {
+    if (index < 0) index = imageList.length - 1;
+    if (index >= imageList.length) index = 0;
+    currentIndex = index;
+    modalImg.src = imageList[currentIndex];
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      showImage(index);
+    });
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIndex + 1);
+  });
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIndex - 1);
+  });
+
+  close.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+
+
+  window.addEventListener('scroll', () => {
+  const marquee = document.querySelector('.marquee');
+  if (window.scrollY > 100) {
+    marquee.style.opacity = '0';
+    marquee.style.transform = 'translateY(-20px)';
+  } else {
+    marquee.style.opacity = '1';
+    marquee.style.transform = 'translateY(0)';
+  }
+});
+
+// Transición suave
+document.querySelector('.marquee').style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+</script>
+</body>
+</html>
